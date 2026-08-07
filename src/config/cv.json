@@ -39,36 +39,48 @@
     ],
     "education": [
         {
-            "title": "Bachelor of Science in Computer Science",
-            "sub_title": "University of Modern Tech",
-            "years": "2015 - 2019",
-            "details": "Graduated with honors. Specialized in software development, data structures, and algorithms. Worked on various open-source projects and completed internships in tech companies."
+            "title": "Computer Science Architecture Program",
+            "sub_title": "École 42 Angoulême",
+            "years": "2023 - 2023",
+            "details": ""
         },
         {
-            "title": "Master of Science in Software Engineering",
-            "sub_title": "Global Tech Institute",
-            "years": "2019 - 2021",
-            "details": "Focused on advanced algorithms, cloud computing, and full-stack development. Published research papers on scalable microservices architecture."
-        }
+            "title": "Building Business Management",
+            "sub_title": "École Supérieure des Jeunes Dirigeants du Bàtiment",
+            "years": "2006 - 2007",
+            "details": ""
+        },
+        {
+            "title": "Master's Degree in Aquatic Environment Engineering",
+            "sub_title": "Tours University",
+            "years": "1994 - 1996",
+            "details": ""
+        },
+        {
+            "title": "University Diploma of Technology (DUT) in Environmental Engineering",
+            "sub_title": "Tours University",
+            "years": "1992 - 1994",
+            "details": ""
+        }                
     ],
     "projects": [
         {
-            "imageUrl": "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?q=80&w=764&auto=format&fit=crop",
-            "title": "hello.com",
-            "type": "Website",
-            "link": "https://github.com/wasutz/astro-resume-theme"
+            "imageUrl": "",
+            "title": "",
+            "type": "",
+            "link": ""
         },
         {
-            "imageUrl": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=764&auto=format&fit=crop",
-            "title": "Paul UI kit collections",
-            "type": "UI Kit",
-            "link": "https://github.com/wasutz/astro-resume-theme"
+            "imageUrl": "",
+            "title": "",
+            "type": "",
+            "link": ""
         },
         {
-            "imageUrl": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=764&auto=format&fit=crop",
-            "title": "paul.com",
-            "type": "Website",
-            "link": "https://github.com/wasutz/astro-resume-theme"
+            "imageUrl": "/src/assets/Workflow.drawio.png",
+            "title": "Mini DevOps Laboratory",
+            "type": "CI/CD",
+            "link": "https://github.com/ppuivif/Mini_DevOps_Lab"
         }
     ],
     "menuItems": [
