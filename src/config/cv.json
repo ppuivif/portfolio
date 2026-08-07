@@ -1,0 +1,86 @@
+{
+    "basic": {
+        "name": "Pierre Alain PUIVIF",
+        "job": "Junior Software Developer | Full-Stack & DevOps",
+        "summary": "Transforming challenges into opportunities with cutting-edge technology. Driven by a love for elegant, robust code.",
+        "cv_file_name": "PUIVIF PA - CV (2026-08-07).pdf"
+    },
+    "experiences": [
+        {
+            "title": "Software Developer Intern",
+            "sub_title": "Lactalis Informatique",
+            "years": "2025 - 2026",
+            "details": "Developed, integrated and tested new features for existing business applications with Java and Angular technologies. Worked with Maven, Jenkins and Ansible within CI/CD workflows."
+        },
+        {
+            "title": "Property Diagnostics Company Manager",
+            "sub_title": "Agence Nationale de Contrôle Immobilier",
+            "years": "2010 - 2023",
+            "details": ""
+        },
+        {
+            "title": "Branch Manager",
+            "sub_title": "SMBA Vigier",
+            "years": "2005 - 2009",
+            "details": "Construction & Civil Engineering."
+        },
+        {
+            "title": "Project Manager / Site Manager",
+            "sub_title": "Roger Marteau SAS / Saur - Stereau",
+            "years": "2000 - 2005",
+            "details": "Water supply and wastewater infrastructure projects."
+        },
+                {
+            "title": "Engineering Technician",
+            "sub_title": "Aquinove - SEDIA",
+            "years": "1998 - 2000",
+            "details": "Aquaculture applications."
+        }
+    ],
+    "education": [
+        {
+            "title": "Bachelor of Science in Computer Science",
+            "sub_title": "University of Modern Tech",
+            "years": "2015 - 2019",
+            "details": "Graduated with honors. Specialized in software development, data structures, and algorithms. Worked on various open-source projects and completed internships in tech companies."
+        },
+        {
+            "title": "Master of Science in Software Engineering",
+            "sub_title": "Global Tech Institute",
+            "years": "2019 - 2021",
+            "details": "Focused on advanced algorithms, cloud computing, and full-stack development. Published research papers on scalable microservices architecture."
+        }
+    ],
+    "projects": [
+        {
+            "imageUrl": "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?q=80&w=764&auto=format&fit=crop",
+            "title": "hello.com",
+            "type": "Website",
+            "link": "https://github.com/wasutz/astro-resume-theme"
+        },
+        {
+            "imageUrl": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=764&auto=format&fit=crop",
+            "title": "Paul UI kit collections",
+            "type": "UI Kit",
+            "link": "https://github.com/wasutz/astro-resume-theme"
+        },
+        {
+            "imageUrl": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=764&auto=format&fit=crop",
+            "title": "paul.com",
+            "type": "Website",
+            "link": "https://github.com/wasutz/astro-resume-theme"
+        }
+    ],
+    "menuItems": [
+        {
+            "name": "About",
+            "link": "/"
+        }
+    ],
+    "socialLinks": [
+        {
+            "iconName": "Github",
+            "link": "https://github.com/ppuivif"
+        }
+    ]
+}
