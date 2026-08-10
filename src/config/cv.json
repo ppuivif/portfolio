@@ -65,7 +65,7 @@
     ],
     "projects": [
         {
-            "imageUrl": "/src/assets/Workflow.drawio.png",
+            "imageUrl": "/images/Workflow.drawio.png",
             "title": "Mini DevOps Laboratory",
             "type": "CI/CD",
             "link": "https://github.com/ppuivif/Mini_DevOps_Lab"
