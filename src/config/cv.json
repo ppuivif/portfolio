@@ -65,18 +65,6 @@
     ],
     "projects": [
         {
-            "imageUrl": "",
-            "title": "",
-            "type": "",
-            "link": ""
-        },
-        {
-            "imageUrl": "",
-            "title": "",
-            "type": "",
-            "link": ""
-        },
-        {
             "imageUrl": "/src/assets/Workflow.drawio.png",
             "title": "Mini DevOps Laboratory",
             "type": "CI/CD",

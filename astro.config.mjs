@@ -6,7 +6,8 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://astro-resume-theme.netlify.app',
+  site: 'https://ppuivif.github.io',
+  base: '/portfolio',
   integrations: [icon(), mdx(), sitemap()],
   vite: {
     plugins: [tailwindcss()],
