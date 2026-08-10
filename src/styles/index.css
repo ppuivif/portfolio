@@ -1,2 +1,40 @@
 @import "tailwindcss";
-@import "theme.css";
+@import "./theme.css";
+
+@layer utilities {
+    .bg-default {
+        background-color: var(--color-background);
+    }
+
+    .bg-offset {
+        background-color: var(--color-background-offset);
+    }
+
+    .bg-primary {
+        background-color: var(--color-primary);
+    }
+
+    .bg-secondary {
+        background-color: var(--color-secondary);
+    }
+
+    .text-default {
+        color: var(--color-text);
+    }
+
+    .text-offset {
+        color: var(--color-text-offset);
+    }
+
+    .text-primary {
+        color: var(--color-primary);
+    }
+
+    .text-secondary {
+        color: var(--color-secondary);
+    }
+
+    .border-default {
+        border-color: var(--color-border);
+    }
+}
