@@ -69,6 +69,12 @@
             "title": "Mini DevOps Laboratory",
             "type": "CI/CD",
             "link": "https://github.com/ppuivif/Mini_DevOps_Lab"
+        },
+                {
+            "imageUrl": "/images/Minishell.gif",
+            "title": "Minishell",
+            "type": "system programming",
+            "link": "https://github.com/ppuivif/MINISHELL"
         }
     ],
     "menuItems": [
