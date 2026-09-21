@@ -6,7 +6,7 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://ppuivif.github.io/portfolio',
+  site: 'https://ppuivif.github.io',
   base: '/portfolio',
   integrations: [icon(), mdx(), sitemap()],
   vite: {

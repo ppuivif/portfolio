@@ -80,14 +80,14 @@
             "imageUrl": "/images/IoT.png",
             "title": "Inception of Things",
             "type": "CI/CD",
-            "link": "https://github.com/ppuivif/IoT"
+            "link": "https://github.com/ppuivif/Inception_of_Things"
         }
 
     ],
     "menuItems": [
         {
             "name": "About",
-            "link": "/"
+            "link": "/portfolio"
         }
     ],
     "socialLinks": [
