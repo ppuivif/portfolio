@@ -3,6 +3,7 @@ import { Icon } from "astro-icon/components";
 import ThemeToggle from "../common/ThemeToggle.astro";
 import { basic } from "../../config/cv.json";
 import { getLocaleMessages, type Locale } from "../../i18n/ui";
+import { sitePath } from "../../i18n/routing";
 
 const { locale = 'en' } = Astro.props as { locale?: Locale };
 const messages = getLocaleMessages(locale);
@@ -12,13 +13,13 @@ const messages = getLocaleMessages(locale);
   <div class="container max-w-6xl mx-auto flex justify-between items-center px-4 md:px-8">
     <!-- Logo -->
     <div class="text-2xl font-bold">
-      <a href={import.meta.env.BASE_URL} class="hover:text-offset">{basic?.name}</a>
+      <a href={sitePath('', locale)} class="hover:text-offset">{basic?.name}</a>
     </div>
 
     <div class="flex gap-5">
       <!-- PC Menu -->
       <nav class="hidden sm:flex space-x-6 items-center">
-        <a href={`${import.meta.env.BASE_URL}${locale === 'fr' ? 'fr/' : ''}#experience`} class="hover:text-offset">{messages.about}</a>
+        <a href={sitePath('#experience', locale)} class="hover:text-offset">{messages.about}</a>
         <label class="sr-only" for="language-select">{messages.language}</label>
         <select id="language-select" class="rounded border border-default bg-background px-2 py-1 text-sm" aria-label={messages.language}>
           <option value="en" selected={locale === 'en'}>English</option>
@@ -39,7 +40,7 @@ const messages = getLocaleMessages(locale);
 
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="hidden sm:hidden">
-    <a href={`${import.meta.env.BASE_URL}${locale === 'fr' ? 'fr/' : ''}#experience`} class="block px-4 py-2 hover:bg-background-offset">{messages.about}</a>
+    <a href={sitePath('#experience', locale)} class="block px-4 py-2 hover:bg-background-offset">{messages.about}</a>
     <label class="block px-4 pt-3 text-sm text-offset" for="mobile-language-select">{messages.language}</label>
     <select id="mobile-language-select" class="m-2 rounded border border-default bg-background px-2 py-1 text-sm" aria-label={messages.language}>
       <option value="en" selected={locale === 'en'}>English</option>

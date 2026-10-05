@@ -4,6 +4,7 @@ import Footer from '../components/layouts/Footer.astro';
 
 import '../styles/index.css';
 import type { Locale } from '../i18n/ui';
+import { sitePath } from '../i18n/routing';
 
 interface Props {
 	title: string;
@@ -14,7 +15,7 @@ const { title, locale = 'en' } = Astro.props;
 ---
 
 <!doctype html>
-<html lang={locale} class="h-full" data-theme="light" data-base={import.meta.env.BASE_URL}>
+<html lang={locale} class="h-full" data-theme="light" data-base={sitePath()}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content={locale === 'fr' ? 'Portfolio et projets de Pierre Alain Puivif' : 'Portfolio and projects by Pierre Alain Puivif'} />

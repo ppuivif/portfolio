@@ -1,6 +1,7 @@
 ---
 import { themes } from '../../../config/cv.json';
 import { getLocaleMessages, type Locale } from '../../../i18n/ui';
+import { sitePath } from '../../../i18n/routing';
 
 const { locale = 'en' } = Astro.props as { locale?: Locale };
 const messages = getLocaleMessages(locale);
@@ -18,7 +19,7 @@ const messages = getLocaleMessages(locale);
         <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
             {themes.map((theme) => (
                 <a
-                    href={`${import.meta.env.BASE_URL}${locale === 'fr' ? 'fr/' : ''}themes/${theme.slug}`}
+                    href={sitePath(`themes/${theme.slug}`, locale)}
                     class="group rounded-xl border border-default bg-background-offset p-5 shadow-lg transition hover:-translate-y-1"
                 >
                     <h3 class="text-2xl font-semibold group-hover:text-primary">{locale === 'fr' ? messages.themes[theme.slug as keyof typeof messages.themes]!.name : theme.name}</h3>

@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Project from '../../components/sections/Project.astro';
 import { projects, themes } from '../../config/cv.json';
+import { sitePath } from '../../i18n/routing';
 
 export function getStaticPaths() {
     return themes.map((theme) => ({
@@ -17,7 +18,7 @@ const themeProjects = projects.filter((project) => project.theme === theme.slug)
 <Layout title={`${theme.name} | Projects`}>
     <main class="bg-background">
         <div class="container mx-auto px-6 py-12">
-            <a href={import.meta.env.BASE_URL} class="text-primary hover:underline">← All themes</a>
+            <a href={sitePath()} class="text-primary hover:underline">← All themes</a>
             <header class="mt-6 text-center">
                 <h1 class="text-3xl font-semibold lg:text-4xl">{theme.name}</h1>
                 <p class="mt-4 text-offset">{theme.description}</p>
