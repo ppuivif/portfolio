@@ -8,9 +8,10 @@ import type { Locale } from '../../../i18n/ui';
 
 export interface Props {
   page: Page<CollectionEntry<"blogs">>;
+  locale?: Locale;
 }
 
-const { page, locale = 'en' } = Astro.props as { page: Page<CollectionEntry<"blogs">>; locale?: Locale };
+const { page, locale = 'en' } = Astro.props;
 ---
 
 <Layout title={locale === 'fr' ? 'Articles' : 'Blogs'} locale={locale}>

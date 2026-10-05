@@ -1,6 +1,12 @@
 ---
 import { getCollection } from 'astro:content';
 import BlogPage from '../../../components/sections/blog/BlogPage.astro';
+import type { Page as AstroPage } from 'astro';
+import type { CollectionEntry } from 'astro:content';
+
+export interface Props {
+  page: AstroPage<CollectionEntry<'blogs'>>;
+}
 
 export async function getStaticPaths({ paginate }) {
   const blogs = await getCollection('blogs');

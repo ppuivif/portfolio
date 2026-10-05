@@ -2,7 +2,7 @@ export type Locale = 'en' | 'fr';
 
 const messages = {
   en: {
-    about: 'Home', experience: 'Experience', education: 'Education',
+    about: 'Home', experience: 'Experience', educationHeading: 'Education',
     projects: 'Explore my projects', projectsIntro: 'Browse projects by area of interest.',
     viewProjects: 'View projects →', downloadCv: 'Download CV',
     allThemes: '← All themes', emptyProjects: 'Projects in this area will be added soon.',
@@ -29,7 +29,7 @@ const messages = {
     },
   },
   fr: {
-    about: 'Home', experience: 'Expérience', education: 'Formation',
+    about: 'Home', experience: 'Expérience', educationHeading: 'Formation',
     projects: 'Mes projets', projectsIntro: 'Découvrez mes projets par domaine.',
     viewProjects: 'Voir les projets →', downloadCv: 'Télécharger le CV',
     allThemes: '← Tous les thèmes', emptyProjects: 'Des projets seront ajoutés prochainement.',
