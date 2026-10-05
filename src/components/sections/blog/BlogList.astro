@@ -1,16 +1,18 @@
 ---
 import type { Blog } from '../../../types/BlogType';
 import BlogItem from './BlogItem.astro';
+import { getLocaleMessages, type Locale } from '../../../i18n/ui';
 
-const { blogs } = Astro.props;
+const { blogs, locale = 'en' } = Astro.props as { blogs: Blog[]; locale?: Locale };
+const messages = getLocaleMessages(locale);
 ---
 
 <section class="py-12 bg-background">
   <div class="container mx-auto px-4 max-w-4xl">
-    <h1 class="text-center text-3xl mb-10">Recent posts</h1>
+    <h1 class="text-center text-3xl mb-10">{messages.recentPosts}</h1>
     <div class="space-y-6">
       {blogs.map((blog: Blog, index: number) => (
-        <BlogItem blog={blog} isFirst={index === 0} />
+        <BlogItem blog={blog} isFirst={index === 0} locale={locale} />
       ))}
     </div>
   </div>

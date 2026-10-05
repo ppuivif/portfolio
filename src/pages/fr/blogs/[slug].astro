@@ -1,0 +1,24 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  const blogs = await getCollection('blogs');
+  return blogs.map((blog) => ({ params: { slug: blog.id }, props: { blog } }));
+}
+
+const { blog } = Astro.props;
+const { Content } = await render(blog);
+---
+
+<Layout title={blog.data.title} locale="fr">
+  <section class="flex justify-center mt-12">
+    <div id="markdown" class="prose prose-lg overflow-visible relative mb-5" lang="en">
+      <Content />
+    </div>
+  </section>
+  <script>
+    import { toggleMarkdownTheme } from '../../../scripts/theme';
+    toggleMarkdownTheme(document.documentElement.dataset.theme);
+  </script>
+</Layout>

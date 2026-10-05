@@ -2,6 +2,10 @@
 import { Image } from 'astro:assets';
 import heroImage from '../../assets/Avatar.png';
 import { basic } from '../../config/cv.json';
+import { getLocaleMessages, type Locale } from '../../i18n/ui';
+
+const { locale = 'en' } = Astro.props as { locale?: Locale };
+const messages = getLocaleMessages(locale);
 ---
 
 <section class="py-5 px-4 sm:py-10 lg:py-16">
@@ -11,11 +15,11 @@ import { basic } from '../../config/cv.json';
                 <Image class="w-full md:max-w-md lg:max-w-md"
                     src={heroImage}
                     loading="eager"
-                    alt="Astro Resume Theme - Paul Smith" />
+                    alt={locale === 'fr' ? 'Photo de Pierre Alain Puivif' : 'Photo of Pierre Alain Puivif'} />
             </div>
             <div>
                 <p class="text-lg text-offset">
-                    {basic?.job}
+                    {locale === 'fr' ? messages.job : basic?.job}
                 </p>
 
                 <h1 class="text-2xl font-bold sm:text-4xl lg:text-5xl mt-3">
@@ -31,7 +35,7 @@ import { basic } from '../../config/cv.json';
                         class="inline-flex items-center justify-center px-10 py-4 text-base text-white
                             font-semibold transition-all duration-200 rounded
                             bg-primary hover:bg-secondary focus:bg-secondary" role="button">
-                        Download CV
+                    {messages.downloadCv}
                     </a>
                 </div>
             </div>

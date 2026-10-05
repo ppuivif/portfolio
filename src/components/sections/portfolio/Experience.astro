@@ -1,6 +1,10 @@
 ---
 import CardListSection from "./CardListSection.astro";
 import { experiences } from '../../../config/cv.json';
+import type { Locale } from '../../../i18n/ui';
+
+const { locale = 'en' } = Astro.props as { locale?: Locale };
+const title = locale === 'fr' ? 'Expérience' : 'Experience';
 ---
 
-<CardListSection title="Experience" items={experiences} />
+<CardListSection title={title} items={experiences} locale={locale} section="experience" />

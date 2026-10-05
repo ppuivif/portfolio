@@ -41,12 +41,12 @@
         {
             "title": "Computer Science Architecture Program",
             "sub_title": "École 42 Angoulême",
-            "years": "2023 - 2023",
+            "years": "2023 - 2026",
             "details": ""
         },
         {
             "title": "Building Business Management",
-            "sub_title": "École Supérieure des Jeunes Dirigeants du Bàtiment",
+            "sub_title": "École Supérieure des Jeunes Dirigeants du Bâtiment",
             "years": "2006 - 2007",
             "details": ""
         },
@@ -63,23 +63,43 @@
             "details": ""
         }                
     ],
+    "themes": [
+        {
+            "slug": "system-programming",
+            "name": "System Programming",
+            "description": "Low-level programming, Unix tools and system software."
+        },
+                {
+            "slug": "devops",
+            "name": "DevOps",
+            "description": "Infrastructure, automation and CI/CD projects."
+        },
+        {
+            "slug": "fullstack",
+            "name": "Fullstack",
+            "description": "Applications built across the frontend and backend."
+        }
+    ],
     "projects": [
         {
             "imageUrl": "/images/Minishell.gif",
             "title": "Minishell",
-            "type": "system programming",
+            "type": "System Programming",
+            "theme": "system-programming",
             "link": "https://github.com/ppuivif/MINISHELL"
         },
         {
             "imageUrl": "/images/Workflow.drawio.png",
             "title": "Mini DevOps Laboratory",
             "type": "CI/CD",
+            "theme": "devops",
             "link": "https://github.com/ppuivif/Mini_DevOps_Lab"
         },
         {
             "imageUrl": "/images/IoT.png",
             "title": "Inception of Things",
             "type": "CI/CD",
+            "theme": "devops",
             "link": "https://github.com/ppuivif/Inception_of_Things"
         }
 
@@ -94,6 +114,10 @@
         {
             "iconName": "Github",
             "link": "https://github.com/ppuivif"
+        },
+        {
+            "iconName": "Linkedin",
+            "link": "https://fr.linkedin.com/in/pierre-alain-puivif-ab490433a"
         }
     ]
 }

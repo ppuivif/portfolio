@@ -4,15 +4,16 @@ import BlogList from '../../sections/blog/BlogList.astro';
 import Pagination from '../../common/Pagination.astro';
 import type { Page } from "astro";
 import type { CollectionEntry } from "astro:content";
+import type { Locale } from '../../../i18n/ui';
 
 export interface Props {
   page: Page<CollectionEntry<"blogs">>;
 }
 
-const { page } = Astro.props;
+const { page, locale = 'en' } = Astro.props as { page: Page<CollectionEntry<"blogs">>; locale?: Locale };
 ---
 
-<Layout title="Blogs">
-  <BlogList blogs={page?.data || []} />
-  <Pagination page={page} />
+<Layout title={locale === 'fr' ? 'Articles' : 'Blogs'} locale={locale}>
+  <BlogList blogs={page?.data || []} locale={locale} />
+  <Pagination page={page} locale={locale} />
 </Layout>
