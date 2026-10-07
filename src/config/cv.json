@@ -74,6 +74,11 @@
             "name": "DevOps",
             "description": "Infrastructure, automation and CI/CD projects."
         },
+                {
+            "slug": "conception",
+            "name": "Conception",
+            "description": "Requirements analysis, solution design and evolution."
+        },
         {
             "slug": "fullstack",
             "name": "Fullstack",
@@ -101,6 +106,13 @@
             "type": "CI/CD",
             "theme": "devops",
             "link": "https://github.com/ppuivif/Inception_of_Things"
+        },
+                {
+            "imageUrl": "",
+            "title": "Travel_estimate",
+            "type": "Conception",
+            "theme": "conception",
+            "link": "https://github.com/ppuivif/Travel_estimate_public.git"
         }
 
     ],

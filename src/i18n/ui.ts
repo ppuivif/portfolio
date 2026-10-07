@@ -24,8 +24,9 @@ const messages = {
     ],
     themes: {
       'system-programming': { name: 'Programmation système', description: 'Programmation bas niveau, outils Unix et logiciels système.' },
-      fullstack: { name: 'Fullstack', description: 'Applications développées côté frontend et backend.' },
       devops: { name: 'DevOps', description: 'Infrastructure, automatisation et projets CI/CD.' },
+      conception: { name: 'Conception', description: 'Analyse des besoins, conception, évolution de solutions.' },
+      fullstack: { name: 'Fullstack', description: 'Applications développées côté frontend et backend.' },
     },
   },
   fr: {
@@ -51,8 +52,9 @@ const messages = {
     ],
     themes: {
       'system-programming': { name: 'Programmation système', description: 'Programmation bas niveau, outils Unix et logiciels système.' },
-      fullstack: { name: 'Fullstack', description: 'Applications développées côté frontend et backend.' },
       devops: { name: 'DevOps', description: 'Infrastructure, automatisation et projets CI/CD.' },
+      conception : { name: 'Conception', description: 'Analyse des besoins, conception, évolution de solutions.' },
+      fullstack: { name: 'Fullstack', description: 'Applications développées côté frontend et backend.' },
     },
   },
 } as const;
