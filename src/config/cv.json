@@ -107,12 +107,12 @@
             "theme": "devops",
             "link": "https://github.com/ppuivif/Inception_of_Things"
         },
-                {
-            "imageUrl": "",
+        {
+            "imageUrl": "/images/Travel_estimate.png",
             "title": "Travel_estimate",
             "type": "Conception",
             "theme": "conception",
-            "link": "https://github.com/ppuivif/Travel_estimate_public.git"
+            "link": "https://github.com/ppuivif/Travel_estimate_public"
         }
 
     ],
