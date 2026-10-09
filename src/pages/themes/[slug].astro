@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Project from '../../components/sections/Project.astro';
 import { projects, themes } from '../../config/cv.json';
 import { sitePath } from '../../i18n/routing';
+import { getLocaleMessages } from '../../i18n/ui';
 
 export function getStaticPaths() {
     return themes.map((theme) => ({
@@ -12,6 +13,7 @@ export function getStaticPaths() {
 }
 
 const { theme } = Astro.props;
+const messages = getLocaleMessages('en');
 const themeProjects = projects.filter((project) => project.theme === theme.slug);
 ---
 
@@ -32,6 +34,12 @@ const themeProjects = projects.filter((project) => project.theme === theme.slug)
                             title={project.title}
                             type={project.type}
                             link={project.link}
+                            objectives={project.objectives}
+                            technologies={project.technologies}
+                            skills={project.skills}
+                            functionalVideo={project.functionalVideo}
+                            technicalVideo={project.technicalVideo}
+                            labels={messages}
                         />
                     ))}
                 </div>

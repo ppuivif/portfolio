@@ -91,35 +91,70 @@
             "title": "Minishell",
             "type": "System Programming",
             "theme": "system-programming",
-            "link": "https://github.com/ppuivif/MINISHELL"
+            "link": "https://github.com/ppuivif/MINISHELL",
+            "objectives": "Recreate a Unix shell with command execution, pipes, redirections and environment variables.",
+            "objectivesFr": "Recréer un shell Unix avec exécution de commandes, tubes, redirections et variables d’environnement.",
+            "technologies": "C, Unix, Make",
+            "skills": "Process management, system calls, parsing, memory management",
+            "skillsFr": "Gestion des processus, appels système, analyse syntaxique, gestion mémoire",
+            "functionalVideo": "",
+            "technicalVideo": ""
         },
                 {
             "imageUrl": "/images/Inception.png",
             "title": "Inception",
             "type": "CI/CD",
             "theme": "devops",
-            "link": "https://github.com/ppuivif/INCEPTION"
+            "link": "https://github.com/ppuivif/INCEPTION",
+            "objectives": "Build and run a secure multi-service infrastructure with Docker Compose.",
+            "objectivesFr": "Construire et exécuter une infrastructure sécurisée composée de plusieurs services avec Docker Compose.",
+            "technologies": "Docker, Docker Compose, NGINX, WordPress, MariaDB",
+            "skills": "Containerization, service networking, Linux administration",
+            "skillsFr": "Conteneurisation, réseau de services, administration Linux",
+            "functionalVideo": "",
+            "technicalVideo": ""
         },
         {
             "imageUrl": "/images/IoT.png",
             "title": "Inception of Things",
             "type": "CI/CD",
             "theme": "devops",
-            "link": "https://github.com/ppuivif/Inception_of_Things"
+            "link": "https://github.com/ppuivif/Inception_of_Things",
+            "objectives": "Deploy and manage applications on Kubernetes clusters.",
+            "objectivesFr": "Déployer et gérer des applications sur des clusters Kubernetes.",
+            "technologies": "Vagrant, Kubernetes, K3s, K3d, ArgoCD, GitLab",
+            "skills": "Container orchestration, cluster administration, infrastructure automation",
+            "skillsFr": "Orchestration de conteneurs, administration de clusters, automatisation d’infrastructure",
+            "functionalVideo": "",
+            "technicalVideo": ""
         },
         {
-            "imageUrl": "/images/Workflow.drawio.png",
+            "imageUrl": "/images/Workflow.png",
             "title": "Mini DevOps Laboratory",
             "type": "CI/CD",
             "theme": "devops",
-            "link": "https://github.com/ppuivif/Mini_DevOps_Lab"
+            "link": "https://github.com/ppuivif/Mini_DevOps_Lab",
+            "objectives": "Create a reproducible lab to explore DevOps workflows and infrastructure.",
+            "objectivesFr": "Créer un laboratoire reproductible pour explorer les workflows DevOps et l’infrastructure.",
+            "technologies": "Docker, Linux, CI/CD",
+            "skills": "Automation, infrastructure design, DevOps practices",
+            "skillsFr": "Automatisation, conception d’infrastructure, pratiques DevOps",
+            "functionalVideo": "",
+            "technicalVideo": ""
         },
         {
             "imageUrl": "/images/Travel_estimate.png",
             "title": "Travel_estimate",
             "type": "Conception",
             "theme": "conception",
-            "link": "https://github.com/ppuivif/Travel_estimate_public"
+            "link": "https://github.com/ppuivif/Travel_estimate_public",
+            "objectives": "Design a solution to estimate travel costs and present the project requirements.",
+            "objectivesFr": "Concevoir une solution d’estimation des frais de déplacement et formaliser les besoins du projet.",
+            "technologies": "Requirements analysis, UML, solution design",
+            "skills": "Needs analysis, modeling, technical documentation",
+            "skillsFr": "Analyse des besoins, modélisation, documentation technique",
+            "functionalVideo": "",
+            "technicalVideo": ""
         }
 
     ],

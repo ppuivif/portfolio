@@ -25,7 +25,7 @@ const themeProjects = projects.filter((project) => project.theme === theme.slug)
       </header>
       {themeProjects.length > 0 ? (
         <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
-          {themeProjects.map((project) => <Project imageUrl={project.imageUrl} title={project.title} type={project.theme === 'system-programming' ? 'Programmation système' : project.type} link={project.link} />)}
+          {themeProjects.map((project) => <Project imageUrl={project.imageUrl} title={project.title} type={project.theme === 'system-programming' ? 'Programmation système' : project.type} link={project.link} objectives={project.objectivesFr || project.objectives} technologies={project.technologies} skills={project.skillsFr || project.skills} functionalVideo={project.functionalVideo} technicalVideo={project.technicalVideo} labels={messages} />)}
         </div>
       ) : (
         <p class="mt-10 text-center text-offset">{messages.emptyProjects}</p>
